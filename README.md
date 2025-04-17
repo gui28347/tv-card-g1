@@ -19,7 +19,7 @@
 
 | Name | Type | Requirement | Description
 | ---- | ---- | ------- | -----------
-| type | string | **Required** | `custom:tv-card`
+| type | string | **Required** | `custom:tv-card-gui`
 | entity | string | **Required** | `random` entity
 | remote | string | **Optional** | `remote` entity of Roku device. Default assume named like `entity`
 | name | string | **Optional** | Card name
@@ -71,7 +71,7 @@ Install using HACS or [see this guide](https://github.com/thomasloven/hass-confi
 Add a custom element in your `ui-lovelace.yaml`
 
 ```yaml
-      - type: custom:tv-card
+      - type: custom:tv-card-gui
         entity: sun.sun
         name: Bedroom TV
         tv: true
@@ -107,7 +107,7 @@ entities:
           '--ha-card-border-radius': 0px
         title: TV Fernbedienung
         card:
-          type: 'custom:tv-card'
+          type: 'custom:tv-card-gui'
           entity: sun.sun
           back:
             service: broadlink.send
@@ -178,13 +178,4 @@ entities:
 
 
 [commits-shield]: https://img.shields.io/github/commit-activity/y/marrobHD/tv-card.svg?style=for-the-badge
-[commits]: https://github.com/marrobHD/tv-card/commits/master
-[discord]: https://discord.gg/ND4emRS
-[discord-shield]: https://img.shields.io/discord/579704220970909717.svg?style=for-the-badge
-[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
-[forum]: https://community.home-assistant.io/t/lovelace-tv-remote-card/91476
-[license-shield]: https://img.shields.io/github/license/marrobHD/tv-card.svg?style=for-the-badge
-[maintenance-shield]: https://img.shields.io/badge/maintainer-marrobHD-blue.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/marrobHD/tv-card.svg?style=for-the-badge
-[releases]: https://github.com/marrobHD/tv-card/releases
-[github]: https://img.shields.io/github/followers/marrobHD.svg?style=social
+[commits]: [https://github.com/gui28347/tv-card-g1//commits/master
