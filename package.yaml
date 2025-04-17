@@ -1,4 +1,4 @@
-name: TV Card
+name: TV Card Gui
 description: 📺 TV Remote Card
 type: lovelace
 keywords:
@@ -7,8 +7,8 @@ keywords:
   - tv
   - television
 author:
-  name: mar_robHD
+  name: mar_robHD/Gui
 license: Apache License, Version 2.0
 files:
-  - tv-card.js
-  - tv-card-editor.js
+  - tv-card-gui.js
+  - tv-card-editor-gui.js
