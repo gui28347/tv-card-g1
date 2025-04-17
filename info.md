@@ -5,7 +5,7 @@
 Add this to your lovelace configuration:
 
 ```yaml
-type: custom:tv-card
+type: custom:tv-card-gui
 entity: sun.sun
 name: Bedroom TV
 tv: true
