@@ -187,4 +187,4 @@ export class TVCardEditor extends LitElement {
   }
 }
 
-customElements.define("tv-card-editor", TVCardEditor);
+customElements.define("tv-card-editor-gui", TVCardEditor);
