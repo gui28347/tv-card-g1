@@ -33,7 +33,7 @@ mdiFastForward,
 mdiVolumeMute,
 mdiVolumeMinus,
 mdiVolumePlus,
-} from "https://unpkg.com/@mdi/js@6.4.95/mdi.js?module"
+} from "https://unpkg.com/@mdi/js@7.4.47/mdi.js?module"
 
 class TVCardServices extends LitElement {
   static get properties() {
@@ -235,6 +235,134 @@ class TVCardServices extends LitElement {
                 `
               : ""
           }
+
+          ${
+            this._config.numeric1 ||
+            this._config.numeric2 ||
+            this._config.numeric3 ||
+            this._config.numeric4 ||
+            this._config.numeric5 ||
+            this._config.numeric6 ||
+            this._config.numeric7 ||
+            this._config.numeric8 ||
+            this._config.numeric9 ||
+            this._config.numeric0
+              ? html`
+                  <div class="row">
+                    ${this._config.numeric1
+                      ? html`
+                          <ha-icon-button
+                            .action="${"numeric1"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:numeric-1-box"
+                            .path=${mdiNumeric1}
+                            title="numeric1"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                     ${this._config.numeric2
+                      ? html`
+                          <ha-icon-button
+                            .action="${"numeric2"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:numeric-2-box"
+                            .path=${mdiNumeric2}
+                            title="numeric2"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                        ${this._config.numeric3
+                      ? html`
+                          <ha-icon-button
+                            .action="${"numeric3"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:numeric-3-box"
+                            .path=${mdiNumeric3}
+                            title="numeric3"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                        ${this._config.numeric4
+                      ? html`
+                          <ha-icon-button
+                            .action="${"numeric4"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:numeric-4-box"
+                            .path=${mdiNumeric4}
+                            title="numeric4"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                        ${this._config.numeric5
+                      ? html`
+                          <ha-icon-button
+                            .action="${"numeric5"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:numeric-5-box"
+                            .path=${mdiNumeric5}
+                            title="numeric5"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                        ${this._config.numeric6
+                      ? html`
+                          <ha-icon-button
+                            .action="${"numeric6"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:numeric-6-box"
+                            .path=${mdiNumeric6}
+                            title="numeric6"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                        ${this._config.numeric7
+                      ? html`
+                          <ha-icon-button
+                            .action="${"numeric7"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:numeric-7-box"
+                            .path=${mdiNumeric7}
+                            title="numeric7"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                        ${this._config.numeric8
+                      ? html`
+                          <ha-icon-button
+                            .action="${"numeric8"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:numeric-8-box"
+                            .path=${mdiNumeric8}
+                            title="numeric8"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                        ${this._config.numeric9
+                      ? html`
+                          <ha-icon-button
+                            .action="${"numeric9"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:numeric-9-box"
+                            .path=${mdiNumeric9}
+                            title="numeric9"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                        ${this._config.numeric0
+                      ? html`
+                          <ha-icon-button
+                            .action="${"numeric0"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:numeric-0-box"
+                            .path=${mdiNumeric0}
+                            title="numeric0"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                  </div>
+                `
+              : ""
+          } 
 
           <div class="row">
             <ha-icon-button
