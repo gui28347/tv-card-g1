@@ -3,6 +3,16 @@ const LitElement = Object.getPrototypeOf(
 );
 const html = LitElement.prototype.html;
 import {
+  mdiNumeric0,
+  mdiNumeric1,
+  mdiNumeric2,
+  mdiNumeric3,
+  mdiNumeric4,
+  mdiNumeric5,
+  mdiNumeric6,
+  mdiNumeric7,
+  mdiNumeric8,
+  mdiNumeric9,
 mdiPower,
 mdiPowerOn,
 mdiPowerOff,
@@ -461,4 +471,4 @@ class TVCardServices extends LitElement {
 
 }
 
-customElements.define("tv-card", TVCardServices);
+customElements.define("tv-card-gui", TVCardServices);
