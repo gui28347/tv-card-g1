@@ -599,4 +599,4 @@ class TVCardServices extends LitElement {
 
 }
 
-customElements.define("tv-card-gui", TVCardServices);
+customElements.define("tv-card-g1", TVCardServices);
