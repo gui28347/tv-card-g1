@@ -1,0 +1,10 @@
+{
+  "domain": "tv-card-gui",
+  "name": "TV Card Gui",
+  "codeowners": [],
+  "dependencies": [],
+  "documentation": "https://github.com/gui28347/tv-card-g1",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "requirements": []
+}
