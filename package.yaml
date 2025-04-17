@@ -10,5 +10,5 @@ author:
   name: mar_robHD/Gui
 license: Apache License, Version 2.0
 files:
-  - tv-card-gui.js
-  - tv-card-editor-gui.js
+  - tv-card-g1.js
+  - tv-card-editor-g1.js
